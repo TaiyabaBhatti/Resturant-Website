@@ -33,29 +33,44 @@ function sideMenu(){
 }
 
 
-menuBtn.addEventListener("click",sideMenu);
+// menuBtn.addEventListener("click",sideMenu);
 
-crossIcon.addEventListener("click",sideMenu);
-
+// crossIcon.addEventListener("click",sideMenu);
 
 // Header hide
-
-const header=document.getElementById("nav-header");
-const navbar=document.getElementById("navbar");
-
-let hideHeaderStatus=false;
+const header=document.getElementById("contact-info");
+const navbar=document.getElementById("navigation-header");
+let screen = window.matchMedia("(width <= 800px)");
+let lastscrollPosition=0;
 function hideHeader(){
-    if(!hideHeaderStatus){
-        header.style.display="none";
-        navbar.style.backgroundColor="#484444d9";
-        hideHeaderStatus=true;
-        }
-        
-           else{
-            header.style.display="flex";
-              hideHeaderStatus=false;
-              navbar.style.backgroundColor="transparent";
-        }
-}
 
-// window.addEventListener("keydown",hideHeader);
+    let isScrollBottom=lastscrollPosition < window.scrollY;
+    if(isScrollBottom){
+        header.style.display="none";
+        }
+           else{
+if(screen.matches){
+    header.style.display="none";
+}
+else{
+    header.style.display="flex";
+}        
+  }
+  lastscrollPosition=window.scrollY;
+}
+ window.addEventListener("scroll",()=>{
+if(window.scrollY>=40){
+    navbar.style.backgroundColor="#484444d9";
+    navbar.style.paddingTop="0rem";
+    hideHeader();
+}
+else{
+    navbar.style.backgroundColor="transparent";
+    if(screen.matches){
+        navbar.style.paddingTop="0rem";
+    }
+    else{
+        navbar.style.paddingTop="3rem";
+    }
+}
+ });
