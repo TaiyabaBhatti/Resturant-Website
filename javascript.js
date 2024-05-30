@@ -8,14 +8,12 @@
 // setTimeout(loaded,2000);
 
 // Menu effect
-
+AOS.init();
 const menuBtn=document.getElementById("menu");
 const sideBar= document.getElementById("side-bar");
 let menuStatus=false;
 let crossIcon=document.getElementById("cross-mark");
-
 function sideMenu(){
-
     if(!menuStatus){
         sideBar.style.display="flex";
         menuStatus=true;
@@ -78,14 +76,15 @@ else{
 
 const previous=document.querySelector("#previous");
 const next=document.querySelector("#next");
-const sliderItems=document.querySelectorAll(".preface-content");
+const sliderItems=document.querySelectorAll("#preface .preface-content");
 const sliderImg=document.querySelectorAll(".slider-bg");
-
 let position=0;
 let lastActiveSlider=sliderItems[0];
 let lastActiveImg=sliderImg[0];
 
 let updateSlider= function(){
+    
+
     lastActiveSlider.classList.remove("active");
     sliderItems[position].classList.add("active");  
     lastActiveSlider=sliderItems[position];
@@ -119,22 +118,28 @@ updateSlider();
 }
 previous.addEventListener("click",slidePrevious);
 
+let autoSlide;
+let autoSlider=function(){
+    autoSlide=setInterval(slideNext,4000);
+}
 
-window.addEventListener("resize",function(){
 
+function analyzer(){
     if(window.innerWidth<=500){
         next.style.display="none";
         previous.style.display="none";  
+        autoSlider();
     }
     else{
         next.style.display="block";
         previous.style.display="block";
+        clearTimeout(autoSlide);
     }
+}
 
 
-
-});
-
+window.addEventListener("resize",analyzer);
+window.addEventListener("load",analyzer);
 
 
 
