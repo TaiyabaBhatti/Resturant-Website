@@ -128,12 +128,12 @@ function analyzer(){
     if(window.innerWidth<=500){
         next.style.display="none";
         previous.style.display="none";  
-        autoSlider();
+        // autoSlider();
     }
     else{
         next.style.display="block";
         previous.style.display="block";
-        clearTimeout(autoSlide);
+        // clearTimeout(autoSlide);
     }
 }
 
