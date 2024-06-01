@@ -144,6 +144,62 @@ window.addEventListener("load",analyzer);
 
 
 
+const imgCard = document.querySelector("#about .img-card");
+
+const targetBlock=document.querySelector("#about");
+
+const aboutBanner=document.querySelector("#about-banner");
+
+targetBlock.addEventListener('mousemove', (e) => {
+    const rect = targetBlock.getBoundingClientRect();
+    const mouseX = e.clientX - rect.left;
+    const mouseY = e.clientY - rect.left;
+
+    // Calculate the horizontal or vertical movement range
+    const maxMovement = 5;
+    
+     // Maximum pixels the image will move left or right
+
+    // Calculate the offset based on the mouse position
+    const offsetX = (mouseX / rect.width) * 2 - 1; // -1 to 1
+
+    const offsetY = (mouseY / rect.width) * 2 - 1; // -1 to 1
+
+    const moveX = offsetX * maxMovement;
+    const moveY = offsetY * maxMovement;
+    // Apply the transform to the image
+    aboutBanner.style.transform = `translate(${moveX}px,${moveY}px)`;
+    imgCard.style.transform = `translate(${moveX}px,${moveY}px)`;
+});
+
+
+targetBlock.addEventListener('mouseleave', () => {
+    // Reset the image position when the mouse leaves the container
+    aboutBanner.style.transform = 'translate(0,0)';
+    imgCard.style.transform = 'translate(0,0)';
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
