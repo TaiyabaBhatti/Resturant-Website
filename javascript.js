@@ -162,7 +162,6 @@ targetBlock.addEventListener('mousemove', (e) => {
 
     // Calculate the offset based on the mouse position
     const offsetX = (mouseX / rect.width) * 2 - 1; // -1 to 1
-
     const offsetY = (mouseY / rect.width) * 2 - 1; // -1 to 1
 
     const moveX = offsetX * maxMovement;
