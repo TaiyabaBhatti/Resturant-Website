@@ -28,7 +28,32 @@
 </head>
 <body>
 
- <main>
+
+
+
+
+ <section id="preLoad" class="xyz">
+
+
+<div class="section-load flexbox">
+
+<div class="round"></div>
+<h1 class="title-load">GRILLi</h1>
+
+</div>
+
+
+
+
+
+
+</section> 
+
+
+
+<main id="load-page">
+
+ <section id="Home">
   <div class="float-div">
     <div class="rotator">
       <img src="./images/hero-icon.png" alt="Hero Icon" class="hero-icon">
@@ -55,19 +80,19 @@
  <div id="navigation-header">
 <div class="container">
 <nav id="navigation-bar" class="flex">
-<div id="log">
+<div class="log-home">
   <img src="./images/logo.png" alt="Logo">
 </div>
-<ul id="navigation-tabs" class="flex">
-<li class="tab"><a href="#" class="tab-link active">home</a></li>
-<li class="tab"><a href="#" class="tab-link">menus</a></li>
-<li class="tab"><a href="#" class="tab-link">about us</a></li>
-<li class="tab"><a href="#" class="tab-link">our chips</a></li>
-<li class="tab"><a href="#" class="tab-link">contact</a></li>
+<ul class="flex navigation-tabs">
+<li class="tab"><a href="#Home" class="tab-link active">home</a></li>
+<li class="tab"><a href="#menu" class="tab-link">menus</a></li>
+<li class="tab"><a href="#about" class="tab-link">about us</a></li>
+<li class="tab"><a href="#" class="tab-link">our chefs</a></li>
+<li class="tab"><a href="#reservation" class="tab-link">contact</a></li>
 </ul>
 <div id="nav-btn-block">
-<button id="nav-btn" class="btn tab-link" >find a table</button>
-<i class="fa-solid fa-bars fa-fade" id="menu-bars"></i>
+<button class="btn tab-link nav-btn" >find a table</button>
+<i class="fa-solid fa-bars fa-fade" id="menu-bars" ></i>
 </div>
 </nav>
 </div>
@@ -116,8 +141,39 @@
   <img src="./images/hero-slider-3.jpg" alt="slider Image" class="img-cover"
 >
 </div>
-</main>
 
+ <div id="side-menu">
+  <i class="fa-regular fa-circle-xmark cross-mark" id="cross"   style="color: #ffffff;"></i>
+    <div class="logo-home">
+      <img src="./images/logo.png" alt="Logo">
+    </div>
+    <ul class="flex" id="navigation-tabs">
+    <li class="tab"><i class="fa-solid fa-diamond diamond-icon"></i><a href="#Home" class="tab-link active">home</a></li>
+    <li class="tab"><i class="fa-solid fa-diamond diamond-icon"></i><a href="#wenu" class="tab-link">menus</a></li>
+    <li class="tab"><i class="fa-solid fa-diamond diamond-icon"></i><a href="#about" class="tab-link">about us</a></li>
+    <li class="tab"><i class="fa-solid fa-diamond diamond-icon"></i><a href="#" class="tab-link">our chips</a></li>
+    <li class="tab"><i class="fa-solid fa-diamond diamond-icon"></i><a href="#reservation" class="tab-link">contact</a></li>
+    </ul>
+    <div class="pin-info flexbox" >
+      <h2 class="title-medium" >visit us</h2>
+      <p class="subtitle-2 gray-font">
+        Resturant St, Delicious City, London 9578, UK
+            <br>
+        <span class="hover-theme">booking@grilli.com</span><br>
+       
+        Open: 09:00 am - 01:00 pm<br>
+      </p>
+      <i class="fa-solid fa-diamond"></i>
+    <div class="flexbox book-a-call">
+    <h3 class="title-small">booking request</h3>   
+    <a class="tab-link">+92(677)7486 4764</a>
+    </div>
+   
+    
+      </div>
+   
+</div>
+ </section>
 
 <!-- Offer section -->
 
@@ -129,7 +185,7 @@
       <h1 class="title-medium" >we offer top notches</h1>
       <p class="subtitle-2 focus-font" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, in eius recusandae tempora suscipit maiores?</p>
       </div>
-      <div id="offer-cards" class="flex">
+      <div class="flex offer-cards">
         <div class="offer-card flexbox">
           <div class="img-card">
         <img src="./images/service-1.jpg" alt="" class="image">
@@ -182,7 +238,7 @@
       <p class="subtitle-2 focus-font" >Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est ut labore possimus vero unde? Dicta ratione autem consequatur assumenda? Accusantium soluta, omnis veritatis cum excepturi accusamus ad sapiente eos ex amet, dolorum enim eveniet pariatur, delectus et itaque beatae consectetur.
       </p>
 
-<div id="book-a-call" class="flexbox">
+<div class="flexbox book-a-call">
   <p class="subtitle-2 focus-font" >Book through  call</p>
   <a class="tab-link">+92(677)7486 4764</a>
 </div>
@@ -207,10 +263,12 @@
 </section>
 
 <section id="special">
+  
     <div class="content grid temp-col-2">
       <div class="special-banner">
         <img src="./images/service-2.jpg" alt="">
       </div>
+      <div class="container">
     <div class="preface-content flexbox" >
       <p class="subtitle-1"  >special desh</p>
       <img src="./images/separator.png" alt="Separator bar" class="separator"  >
@@ -230,13 +288,9 @@
       <button  class="btn tab-link home-btn" >read more</button>
       </div>
     </div>
-  
+    </div>
+ 
 </section>
-
-
-
-
-
 
 <section id="menu" class="section">
   <div class="container"> 
@@ -257,7 +311,7 @@
     <span class="wider"></span>
     <p class="new-price">$25.50</p>
   </div>
-<p class="subtitle-2 focus-font">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur, deleniti.</p>
+<p class="subtitle-2 gray-font">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur, deleniti.</p>
 </div>
 </div>
 <div class="list-item flex">
@@ -268,7 +322,7 @@
       <span class="wider"></span>
       <p class="new-price">$10.00</p>
     </div>
-  <p class="subtitle-2 focus-font">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur, deleniti.</p>
+  <p class="subtitle-2 gray-font">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur, deleniti.</p>
   </div>
   </div>
   <div class="list-item flex">
@@ -279,7 +333,7 @@
         <span class="wider"></span>
         <p class="new-price">$25.00</p>
       </div>
-    <p class="subtitle-2 focus-font">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur, deleniti.</p>
+    <p class="subtitle-2 gray-font">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur, deleniti.</p>
     </div>
     </div>
 
@@ -293,7 +347,7 @@
                 <span class="wider"></span>
                 <p class="new-price">$40.00</p>
               </div>
-            <p class="subtitle-2 focus-font">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur, deleniti.</p>
+            <p class="subtitle-2 gray-font">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur, deleniti.</p>
             </div>
             </div>
             <div class="list-item flex">
@@ -305,7 +359,7 @@
                   <span class="wider"></span>
                   <p class="new-price">$10.00</p>
                 </div>
-              <p class="subtitle-2 focus-font">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur, deleniti.</p>
+              <p class="subtitle-2 gray-font">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur, deleniti.</p>
               </div>
               </div>
               <div class="list-item flex">
@@ -316,7 +370,7 @@
                     <span class="wider"></span>
                     <p class="new-price">$49.00</p>
                   </div>
-                <p class="subtitle-2 focus-font">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur, deleniti.</p>
+                <p class="subtitle-2 gray-font">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur, deleniti.</p>
                 </div>
                 </div>
         </div>
@@ -355,22 +409,257 @@
 <!-- Strength -->
 
 <section id="reservation" class="section">
-  <div class="container">
+  <div class="container flexbox">
+    <div id="booking" class="grid temp-col-2" data-aos="flip-up">
+      <form action="" id="order-form" class="flexbox">
+    
+        <div class="title-form"><h1 class="title-medium" >online reservation</h1>
+          <p class="subtitle-2 focus-font"  >Booking request<span class="timing">+92-123-123456</span> or fill out the order form</p></div>
+        
+    <div class="row-1 flex"><input type="text" name="Name" id="name" placeholder="Your Name">
+      <input type="tel" name="PhoneNumber" id="phonenumber" placeholder="Phone Number" pattern="^\d{4} \d{7}$"></div>    
+    <div class="row-2 flex">
+    
+    <div class="dd-block">
+      <i class="fa-regular fa-user dropdown-icon"></i>
+      <select name="Persons" id="person" class="drop-down">    
+        <option value="1 Person">1 Person</option>
+        <option value="2 Person">2 Person</option>
+        <option value="3 Person">3 Person</option>
+        <option value="4 Person">4 Person</option>
+        <option value="5 Person">5 Person</option>
+        <option value="6 Person">6 Person</option>
+      </select>
+    
+    </div>
+    <div class="dd-block">
+    
+      <i class="fa-solid fa-clock dropdown-icon"></i>
+      <select name="Time" id="time" class="drop-down">    
+        <option value="08:00 am">08:00 am</option>
+        <option value="09:00 am">09:00 am</option>
+        <option value="10:00 am">10:00 am</option>
+        <option value="11:00 am">11:00 am</option>
+        <option value="12:00 am">12:00 am</option>
+        <option value="01:00 pm">01:00 pm</option>
+        <option value="02:00 pm">02:00 pm</option>
+        <option value="03:00 pm">03:00 pm</option>
+        <option value="04:00 pm">04:00 pm</option>
+        <option value="05:00 pm">05:00 pm</option>
+        <option value="06:00 pm">06:00 pm</option>
+        <option value="07:00 pm">07:00 pm</option>
+      <option value="08:00 pm">08:00 pm</option>
+      </select>
+    
+    </div>
+    <div class="dd-block">
+      <input type="date" id="calender" name="Date">
+      <i class="fa-solid fa-calendar-days dropdown-icon" id="date-icon"></i>
+      <select name="Date" id="date" class="drop-down">
+            <option value="Date" id="selected-date">dd---yyy</option>
+      </select>
+    
+    </div>
+    </div>
+    <div class="row-3 flex"><textarea name="message" rows="6">Message.
+    </textarea>
+    </div>
+    <input type="submit" value="book a table" class="nav-btn btn tab-link">
+      </form>
+    
+    <div class="pin-info flexbox" >
+      <h2 class="title-medium" >contact us</h2>
+    
+    <div class="flexbox book-a-call">
+    <h3 class="title-small">booking request</h3>   
+    <a class="tab-link">+92(677)7486 4764</a>
+    </div>
+    <i class="fa-solid fa-diamond"></i>
+    <div class="item-desc">
+      <h3 class="title-small">Location</h3>   
+    <p class="subtitle-2 gray-font">Lorem ipsum dolor sit amet consectetur.,</p>
+    </div>
+    <div class="item-desc">
+    <h3 class="title-small">Lunch Time</h3>   
+    <p class="subtitle-2 gray-font">Monday to Sunday <br> 11:00am-2:30pm</p>
+    </div>
+    <div class="item-desc">
+    <h3 class="title-small">Dinner Time</h3>   
+    <p class="subtitle-2 gray-font">Monday to Sunday <br> 6:00pm-10:00pm</p>
+    </div>
+      </div>
+    </div>
     <div class="preface-content flexbox">
       <p class="subtitle-1"  >why choose us</p>
       <img src="./images/separator.png" alt="Separator bar" class="separator"  >
       <h1 class="title-medium" >our Strength</h1>
       </div>
+      <div class="grid temp-col-4 cards">
+      
+        <div class="card-item flexbox">
+       <figure>
+        <img src="./images/features-icon-1.png" alt="" class="image">
+       </figure>   
+        <h2 class="sub-heading">hygenic food</h2>
+        <p class="subtitle-2 gray-font">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur, deleniti.</p>
+        </div>
+        <div class="card-item flexbox">
+          <figure>
+           <img src="./images/features-icon-2.png" alt="" class="image">
+          </figure>   
+           <h2 class="sub-heading">fresh enviriment</h2>
+           <p class="subtitle-2 gray-font">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur, deleniti.</p>
+           </div>
+           <div class="card-item flexbox">
+            <figure>
+             <img src="./images/features-icon-3.png" alt="" class="image">
+            </figure>   
+             <h2 class="sub-heading">skilled chefs</h2>
+             <p class="subtitle-2 gray-font">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur, deleniti.</p>
+             </div>
+             <div class="card-item flexbox">
+              <figure>
+               <img src="./images/features-icon-4.png" alt="" class="image">
+              </figure>   
+               <h2 class="sub-heading">event & party</h2>
+               <p class="subtitle-2 gray-font">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur, deleniti.</p>
+               </div>
+      </div>
+
+
+
+
+
 </div>
+
+
+
+<img src="./images/shape-7.png" alt="kiwi-shape" class="kiwi float-corner">
+<img src="./images/shape-8.png" alt="blueberry-shape" class="blueberry float-corner">
 </section>
 
 
 
+<section id="events" class="section">
+  <div class="container">
+    <div class="preface-content flexbox">
+      <p class="subtitle-1"  >recent updates</p>
+      <img src="./images/separator.png" alt="Separator bar" class="separator"  >
+      <h1 class="title-medium" >upcoming events</h1>
+      
+      </div>
+      <div class="offer-cards flex">
+        <div class="offer-card flexbox">
+          <div class="img-card">
+        <img src="./images/event-1.jpg" alt="" class="image">
+      </div>
+      <p class="subtitle-1 event-date">15/09/2022</p>
+      <div class="card-desc flexbox">
+        <p class="subtitle-1"  >recipie</p>
+        <p class="subtitle-2 focus-font">Flavours so good you'll try to eat with your eyes</p>
+          </div>
+         
+        </div>
+        <div class="offer-card flexbox">
+          <div class="img-card">
+        <img src="./images/event-2.jpg" alt="" class="image">
+        
+      </div>
+      <p class="subtitle-1 event-date">15/09/2022</p>
+      <div class="card-desc flexbox">
+        <p class="subtitle-1"  >recipie</p>
+        <p class="subtitle-2 focus-font">Flavours so good you'll try to eat with your eyes</p>
+          </div>
+        </div>
+        <div class="offer-card flexbox">
+          <div class="img-card">
+        <img src="./images/event-3.jpg" alt="Service" class="image">
+      </div>
+      <p class="subtitle-1 event-date">15/09/2022</p>
+      <div class="card-desc flexbox">
+      <p class="subtitle-1"  >recipie</p>
+      <p class="subtitle-2 focus-font">Flavours so good you'll try to eat with your eyes</p>
+        </div>
+      </div>
+            
+      </div>
+      <div class="preface-content flexbox" >
+        <button  class="btn tab-link home-btn" >view all menu</button>
+        </div>
+
+    </div>
+  </section>
+
+
+<footer id="footer" class="section">
+  <div class="container"> 
+      <div class="footer-content grid temp-col-3">
+        <ul class="flexbox navigation-tabs">
+          <li class="tab"><a href="#Home" class="tab-link">home</a></li>
+          <li class="tab"><a href="#menu" class="tab-link">menus</a></li>
+          <li class="tab"><a href="#about" class="tab-link">about us</a></li>
+          <li class="tab"><a href="#" class="tab-link">our chefs</a></li>
+          <li class="tab"><a href="#reservation" class="tab-link">contact us</a></li>
+          </ul>
+    <div class="note flexbox" >
+      <img src="./images/logo.png" class="logo" alt="Logo Image">
+      <p class="subtitle-2 gray-font" >
+        Resturant St, Delicious City, London 9578, UK
+            <br>
+        <span class="hover-theme">booking@grilli.com</span><br>
+        <span class="hover-theme">Booking Request: +88-123-123456</span><br>
+        Open: 09:00 am - 01:00 pm<br>
+      </p>
+      <img src="./images/separator.png" alt="Separator bar" class="separator"  >
+      <h2 class="sub-heading">get news & offers</h2>
+        <p class="subtitle-2 gray-font" >
+          Subscribe us & get <span class="focus-font">25% off</span>.
+        </p>
+     
+
+<div id="Subscribe" class="flex">
+  <i class="fa-solid fa-envelope mail"></i>
+ <input type="email" name="Email" id="subs-email" placeholder="Your Email">
+ <button class="btn tab-link nav-btn" >Subscribe </button>
+ 
+</div>
+     
+      </div>
+      <ul class="flexbox navigation-tabs">
+        <li class="tab"><a href="#" class="tab-link">facebook</a></li>
+        <li class="tab"><a href="#" class="tab-link">instagram</a></li>
+        <li class="tab"><a href="#" class="tab-link">twitter</a></li>
+        <li class="tab"><a href="#" class="tab-link">youtube</a></li>
+        <li class="tab"><a href="#" class="tab-link">google map</a></li>
+        </ul>
+
+    </div>
+
+    <p class="subtitle-2 gray-font" >@ 2022 Grilli, All Right Reserved, created by  
+  <span class="timing">Tayyaba Bhatti</span>
+    </p>
 
 
 
 
 
+
+
+
+
+
+  </div>
+
+
+
+</footer>
+
+
+
+<a href="#Home"><i class="fa-solid fa-circle-up" id="look-up"></i></a>
+
+
+</main>
 
 
 
