@@ -513,7 +513,9 @@ i.fa-diamond {
 /* General end */
 
 
-
+.move-btn:hover i{
+  color: black;
+}
 
 
 /* Contact header */
