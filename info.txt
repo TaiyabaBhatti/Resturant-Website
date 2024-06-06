@@ -79,3 +79,6 @@ Icons
 <i class="fa-solid fa-chevron-right"></i>
 <i class="fa-solid fa-bars"></i>
 <i class="fa-solid fa-diamond"></i>
+Pattern Image reside behind the offer desh image
+Animated Image for beautiful interactions
+designed separator image
